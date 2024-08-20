@@ -1,0 +1,9 @@
+### Create a new user
+POST http://localhost:5000/api/auth/signup
+Content-Type: application/json
+
+{
+  "email": "sammyorondo2@gmail.com",
+  "password": "SecurePass123",
+  "name": "Sammy Orondo"
+}
