@@ -7,3 +7,49 @@ Content-Type: application/json
   "password": "SecurePass123",
   "name": "Sammy Orondo"
 }
+
+### Login user
+POST http://localhost:5000/api/auth/login
+Content-Type: application/json
+
+{
+  "email": "sammyorondo2@gmail.com",
+  # "password": "SecurePass123",
+  "password": "passSecure123"
+}
+
+### verify email
+POST http://localhost:5000/api/auth/verify-email
+Content-Type: application/json
+
+{
+  "code": 981142
+}
+
+### resend verification code
+POST http://localhost:5000/api/auth/resend-verification-code
+Content-Type: application/json
+
+{
+  "email": "sammyorondo2@gmail.com"
+}
+
+### reset password request
+POST http://localhost:5000/api/auth/forgot-password
+Content-Type: application/json
+
+{
+  "email": "sammyorondo2@gmail.com"
+}
+
+### reset password
+POST http://localhost:5000/api/auth/reset-password/06d23d47e494995f144f70632a8250c7c414c285
+Content-Type: application/json
+
+{
+  "password": "passSecure123"
+}
+
+### check auth
+GET http://localhost:5000/api/auth/check-auth
+Content-Type: application/json

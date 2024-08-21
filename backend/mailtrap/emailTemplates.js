@@ -55,6 +55,9 @@ export const PASSWORD_RESET_SUCCESS_TEMPLATE = `
       <li>Enable two-factor authentication if available</li>
       <li>Avoid using the same password across multiple sites</li>
     </ul>
+    <div style="text-align: center; margin: 30px 0;">
+      <a href="{loginURL}" style="background-color: #4CAF50; color: white; padding: 12px 20px; text-decoration: none; border-radius: 5px; font-weight: bold;">Login</a>
+    </div>
     <p>Thank you for helping us keep your account secure.</p>
     <p>Best regards,<br>Auth KE Team</p>
   </div>
