@@ -50,6 +50,10 @@ Content-Type: application/json
   "password": "passSecure123"
 }
 
+### logout
+POST http://localhost:5000/api/auth/logout
+Content-Type: application/json
+
 ### check auth
 GET http://localhost:5000/api/auth/check-auth
 Content-Type: application/json
